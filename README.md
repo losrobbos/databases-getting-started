@@ -11,5 +11,5 @@ We gonna use the following Databases:
 - SQL Database: MySQL (= Relational Database)
 
 Guides:
-- <a href="./MONGODB_GUIDE.md" target="_blank">MongoDB Guide</a>
-- <a href="./MYSQL_GUIDE.md" target="_blank">MySQL Guide</a>
+- <a href="./MONGODB_GUIDE.md">MongoDB Guide</a>
+- <a href="./MYSQL_GUIDE.md">MySQL Guide</a>

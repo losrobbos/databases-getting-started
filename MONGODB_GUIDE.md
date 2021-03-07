@@ -31,7 +31,8 @@ https://www.mongodb.com/cloud/atlas
   - Create a collection and fill in a document
   - Check in Atlas if you can see the created data (tab "Collections")
 
-- Video Guide (optional): https://www.youtube.com/watch?v=KKyag6t98g8
+Video Guide for the steps above (optional): https://www.youtube.com/watch?v=KKyag6t98g8
+
 
 
 ### MongoDB local installation
@@ -47,6 +48,7 @@ If not - we can now start the installation:
 Please do NOT do the following: `sudo apt install mongodb`. This will install an likely quite outdated version of MongoDB in the official Ubuntu package repository.
 
 Follow the official guide to install the current stable version:
+
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#install-mongodb-community-edition
 
 In Step 2 ("Create a list file") you do not need to create this file in your file explorer. Just execute the command given at the end of the section (the one starting with 'echo "deb [...'). Click the "Copy" button to grab that line and paste it into a terminal with CTRL+SHIFT+V. And then hit enter.
@@ -108,7 +110,7 @@ https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#install-mongod
 
 ## Connect to database
 
-We have two options to work the data in a database: 
+We have two options to access & work with data in a database: 
 
 - Connecting with an UI tool
 - Connecting from code
@@ -123,6 +125,17 @@ Installation: https://docs.mongodb.com/compass/master/install/
 
 Mongoose Library: https://mongoosejs.com/docs/
 
+JavaScript snippet for setting up a connection:
+
+```
+  mongoose.connect(...yourConnString..., {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+  .then(() => console.log("DB Connection successful!"))
+  .catch((err) => console.log("[ERROR] DB Connection failed!", err))
+```
+
 
 ## Terminology
 
@@ -131,17 +144,19 @@ Mongoose Library: https://mongoosejs.com/docs/
 - Collection: An "array" of documents. E.g. the "users" collection containing all users of our database
 - ObjectID: The unique ID format / datatype MongoDB uses to identify each record / document in the database. An ObjectID is unique in the WHOLE database, not just in a collection.
 
+<!--
 ## Field Datatypes
 
-https://3.bp.blogspot.com/-AJekhXzsT7g/W_F-KYEfZEI/AAAAAAAAB1M/62-rfvLLJyQZC_a8QwR7FK9jE1C9ffgZACLcBGAs/s1600/image1.png
-
+https://3.bp.blogspot.com/-AJekhXzsT7g/W_F-KYEfZEI/AAAAAAAAB1M/
+62-rfvLLJyQZC_a8QwR7FK9jE1C9ffgZACLcBGAs/s1600/image1.png
+-->
 
 
 ## Online Query Training tool
 
 MongoDB playground: https://mongoplayground.net/
 
-Here you can safely try out common DB operations without having to deal with the hassle of installing an own Mongo database.
+Here you can safely try out common DB CRUD operations without having to deal with the hassle of installing an own Mongo database.
 
 
 ### Command Cheatsheet

@@ -35,17 +35,14 @@ The official setup guide of MySQL is quite hard to follow and is splitted among 
 
 A bit easier to follow are the guides from Digital Ocean, which are often kept up to date and contain all necessary setup steps.
 
-Install Guide - Ubuntu 20.04: 
+[Install Guide - Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
 
-[https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04)
-
-Install Guide - Ubuntu 18.04: 
-
-[https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04]https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04
+[Install Guide - Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04)
 
 
 
 Official MySQL Install Guide - Linux:
+
 https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install
 (just until section "Selecting a Major Release version")
 
@@ -82,4 +79,5 @@ MySQL Workbench:
 ### Connecting from JavaScript
 
 Sequelize Library (for SQL databases):
+
 https://sequelize.org/master/manual/getting-started.html
