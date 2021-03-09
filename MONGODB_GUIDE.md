@@ -74,7 +74,11 @@ If that is the case: Check if the mongod service is running:
 
 Is it not running?
 
-Enable the Mongo Service if not active:
+Startup the Mongo Service:
+
+`sudo systemctl start mongod.service`
+
+And also activate it to run on boot:
 
 `sudo systemctl enable mongod.service`
 
@@ -82,13 +86,35 @@ Check the status again:
 
 `sudo systemctl status mongod.service`
 
-If the Mongo service fails to startup, likely something during installation went wrong. 
+If the Mongo service fails to startup (you get "inactive"), likely something during installation went wrong. Then follow below...
 
 First check if you have actually the community version installed:
 
 `sudo apt-cache policy mongodb-org-server | head -n3`
 
-If the command above gives you no output, you likely have not performed all steps in the official installation guide of MongoDB (see link above) correctly, because you do not have the official version installed. Please get in touch & we need to check individually.
+If the command above gives you nothing or "(none)" as value for installed, you likely have not performed all steps in the official installation guide of MongoDB (see link above) correctly, because you do not have the official version installed. Please get in touch & we check individually.
+
+If the command above tells you, MongoDB is installed locally (and the version is above 4.0), the installation has worked, but probably write permissions on the MongoDB directory are not set correctly.
+
+Please check where MongoDB stores its data:
+
+`grep dbPath /etc/mongod.conf`
+
+(normally this should give you the path /var/lib/mongodb
+
+Now check the permissions of the parent folder:
+
+`ls -l /var/lib | grep mongo`
+
+That should give you something like the following:
+
+`drwxr-xr-x  4 mongodb       mongodb       4096 Mar  9 10:02 mongodb`
+
+If the owner of that folder is NOT the user mongodb, but root, please make mongodb the owner:
+
+`sudo chown -R mongodb:mongodb /var/lib/mongodb`
+
+Afterwards try to startp the service once more: 
 
 ##### Setting up an Admin user
 
