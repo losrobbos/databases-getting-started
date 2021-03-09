@@ -15,9 +15,9 @@ MySQL Cheatsheet: https://devhints.io/mysql
 
 ## Terminology
 	
-- Row: Data entries / resouces are stored in rows, e.g. a "user"
+- Table: Collection of items of the same type / structure, e.g. "users"
+- Row: Data entries stored in a table. Every rows represents one unique resource, e.g. a "user"
 - Column: Individual field of a row, e.g. "name" of a user
-- Table: Collection of rows of the same type, e.g. "users"
 - Primary Key: Unique ID of a row within a table
 
 ## MySQL Datatypes

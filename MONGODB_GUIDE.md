@@ -143,13 +143,17 @@ JavaScript snippet for setting up a connection:
 - Field: An attribute of a document, e.g. the "name" of a user
 - Collection: An "array" of documents. E.g. the "users" collection containing all users of our database
 - ObjectID: The unique ID format / datatype MongoDB uses to identify each record / document in the database. An ObjectID is unique in the WHOLE database, not just in a collection.
+- Schema: Set of rules a valid document must fulfill. E.g. which fields are allowed, what datatypes the fields must be, which fields are required, etc. For example a "email" field of the user should be a string, is required, but the "username" field is optional.
+- Model: A "data manager" for one resource. E.g. a User model manages users in the database. So you can use a model to perform creation, filtering, updating & deleting of data. You can think about the model as a "super-charged" array, that - instead of array methods for data querying & manipulating - offers special "array" methods to query & manipulate data directly in a database. Every model has a schema attached to it. So the model will validate the rules in the schema for all operations to decide if the operation is permitted or not.
 
-<!--
-## Field Datatypes
+## Schema Field Datatypes
 
-https://3.bp.blogspot.com/-AJekhXzsT7g/W_F-KYEfZEI/AAAAAAAAB1M/
-62-rfvLLJyQZC_a8QwR7FK9jE1C9ffgZACLcBGAs/s1600/image1.png
--->
+Find following a list of all datatypes a field in MongoDB can have:
+
+https://www.tutorialspoint.com/mongodb/mongodb_datatype.htm
+
+<!-- https://3.bp.blogspot.com/-AJekhXzsT7g/W_F-KYEfZEI/AAAAAAAAB1M/
+62-rfvLLJyQZC_a8QwR7FK9jE1C9ffgZACLcBGAs/s1600/image1.png -->
 
 
 ## Online Query Training tool
