@@ -24,12 +24,14 @@ https://www.mongodb.com/cloud/atlas
 
 - Setup Network Access > IP Whitelist > Access from everywhere
 
+<!--
 - Connect to your Atlas DB using Compass 
   - Go to tab "Connect"
   - Grab the connection string specific for Compass
   - Launch Compass and paste the string into the connection field 
   - Create a collection and fill in a document
   - Check in Atlas if you can see the created data (tab "Collections")
+-->
 
 Video Guide for the steps above (optional): https://www.youtube.com/watch?v=KKyag6t98g8
 
