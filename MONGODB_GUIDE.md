@@ -167,7 +167,7 @@ JavaScript snippet for setting up a connection:
 
 ## Terminology
 
-- Document: A resource stored in the DB, e.g. a "user"
+- Document: A resource stored in the DB, e.g. a "user". Documents are very similar to JavaScript objects.
 - Field: An attribute of a document, e.g. the "name" of a user
 - Collection: An "array" of documents. E.g. the "users" collection containing all users of our database
 - ObjectID: The unique ID format / datatype MongoDB uses to identify each record / document in the database. An ObjectID is unique in the WHOLE database, not just in a collection.
