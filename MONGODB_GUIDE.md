@@ -169,7 +169,7 @@ JavaScript snippet for setting up a connection:
 
 - Document: A resource stored in the DB, e.g. a "user". Documents are very similar to JavaScript objects.
 - Field: An attribute of a document, e.g. the "name" of a user
-- Collection: An "array" of documents. E.g. the "users" collection containing all users of our database
+- Collection: An "array" of documents of the same type. E.g. the "users" collection containing all users of our database
 - ObjectID: The unique ID format / datatype MongoDB uses to identify each record / document in the database. An ObjectID is unique in the WHOLE database, not just in a collection.
 - Model: A "data manager" for one resource. E.g. a User model manages users in the database. So you can use a model to perform creation, filtering, updating & deleting of user data. You can think about the model as a "super-charged" array, that - instead of providing "normal" array methods for data querying & manipulating - offers special array methods to query & manipulate data directly in a database! Every model has a schema attached to it. So the model will validate the rules in the schema for all operations to decide if the operation is permitted or not.
 - Schema: Set of rules any valid document in a collection must fulfill. the schema defines which fields required, what datatypes the fields must be, etc. For example a "email" field of the user should be a string, is required, same for the password field. But the field "username" is optional.
