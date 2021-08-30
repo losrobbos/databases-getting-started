@@ -2,7 +2,11 @@
 
 ## Online Training tool
 
-MySQL playground: https://extendsclass.com/mysql-online.html
+MySQL playgrounds for training the SQL language online.
+
+- http://sqlfiddle.com/
+- https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
+- https://extendsclass.com/mysql-online.html
 
 Here you can safely try out common DB operations without having to deal with the hassle of installing an own SQL database.
 
@@ -21,6 +25,17 @@ MySQL Cheatsheet: https://devhints.io/mysql
 - Primary Key: Unique ID of a row within a table
 
 ## MySQL Datatypes
+
+Each column in an SQL row has a DATATYPE.
+
+So e.g. 
+- INTEGER for Numbers
+- TINYINT for small Numbers
+- "CHAR", "VARCHAR", "TEXT" for Strings
+
+So you see already, MySQL provides much more specific datatypes than JavaScript, to store data most efficiently. Because efficiency, data integrity and performance in databases is EVERYTHING.
+
+Find here a complete list of MySQL database:
 
 http://www.mysqltutorial.org/wp-content/uploads/0211/03/MySQL-Data-Types.jpg
   
@@ -43,12 +58,14 @@ A bit easier to follow are the guides from Digital Ocean, which are often kept u
 
 Official MySQL Install Guide - Linux:
 
+In case you wanna follow the official guide for installing MySQL on your linux machine, especially if you do not have Ubunut, follow this one:
+
 https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#apt-repo-fresh-install
 (just until section "Selecting a Major Release version")
 
-Please state a root password from the beginning and note it!
+Please state - like stated in the guide - a root password from the beginning and note it!
 
-Afterwards try to run your database with "sudo mysql -u root -p <yourRootPassword>".
+Afterwards try to run your database with `sudo mysql -u root -p <yourRootPassword>`.
 
 
 #### Windows
