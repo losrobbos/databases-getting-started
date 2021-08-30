@@ -95,6 +95,11 @@ MySQL Workbench:
 
 ### Connecting from JavaScript
 
-Sequelize Library (for SQL databases):
+### TypeORM library
+
+https://orkhan.gitbook.io/typeorm/docs/usage-with-javascript
+https://typeorm.io/#/example-with-express (typescript syntax)
+
+### Sequelize Library
 
 https://sequelize.org/master/manual/getting-started.html
