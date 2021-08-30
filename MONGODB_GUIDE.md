@@ -45,9 +45,28 @@ Check first if mongo db is already installed
 
 `mongod --version`
 
-If not - we can now start the installation:
+If not - we can now start the installation.
 
-Please do NOT do the following: `sudo apt install mongodb`. This will install an likely quite outdated version of MongoDB in the official Ubuntu package repository.
+Please do NOT right away do the following: `sudo apt install mongodb`. This will maybe install an quite outdated version of MongoDB of the official Ubuntu package repository.
+
+First let's check which MongoDB version is available for us:
+
+`sudo apt policy mongodb`
+
+This should give some output like this:
+
+```
+mongodb:
+  Installed: (none)
+  Candidate: 1:3.6.3-0ubuntu1.1
+  ...
+```
+
+In case you got a version 3.6 or above as your "Candidate 1:" that should be fine with our lectures. You can now do `sudo apt install mongodb`
+
+In case you got a version LESS THAN 3.6 listed here, it is highly recommended installing a MongoDB version from the official repository (see below). This way it will be assured that you can use all the code  we are going to use in the lectures.
+
+##### Install Official MongoDB version
 
 Follow the official guide to install the current stable version:
 
