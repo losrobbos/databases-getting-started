@@ -1,5 +1,12 @@
 # MySQL
 
+## Terminology
+	
+- Table: Collection of items of the same type / structure, e.g. "users"
+- Row: Data entries stored in a table. Every rows represents one unique resource, e.g. a "user"
+- Column: Individual field of a row, e.g. "name" of a user
+- Primary Key: Unique ID of a row within a table
+
 ## Online Training tool
 
 MySQL playgrounds for training the SQL language online.
@@ -16,13 +23,6 @@ Find following some cheat sheets for common DB operations.
 
 MySQL Cheatsheet: https://devhints.io/mysql
 
-
-## Terminology
-	
-- Table: Collection of items of the same type / structure, e.g. "users"
-- Row: Data entries stored in a table. Every rows represents one unique resource, e.g. a "user"
-- Column: Individual field of a row, e.g. "name" of a user
-- Primary Key: Unique ID of a row within a table
 
 ## MySQL Datatypes
 
