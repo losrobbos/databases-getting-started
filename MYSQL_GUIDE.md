@@ -9,7 +9,7 @@
 
 ## Online Training tool
 
-MySQL playgrounds for training the SQL language online.
+Find here MySQL playgrounds for training the SQL language online:
 
 - http://sqlfiddle.com/
 - https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
@@ -31,7 +31,7 @@ Each column in an SQL row has a DATATYPE.
 So e.g. 
 - INTEGER for Numbers
 - TINYINT for small Numbers
-- "CHAR", "VARCHAR", "TEXT" for Strings
+- "CHAR", "VARCHAR", "TEXT" for Strings of different size
 
 So you see already, MySQL provides much more specific datatypes than JavaScript, to store data most efficiently. Because efficiency, data integrity and performance in databases is EVERYTHING.
 
