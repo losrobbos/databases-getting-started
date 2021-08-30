@@ -76,9 +76,15 @@ In Step 2 ("Create a list file") you do not need to create this file in your fil
 
 Afterwards try to startup the MongoDB service with the provided instructions.
 
-Once you can successfully run the command "mongo" in the terminal and it runs without error, you have done it!
+Once you can successfully run the command `mongo` in the terminal and it runs without error, you have done it!
 
-After you run "mongo" you will be in the so called "Mongo Shell". Here you can execute commands against the database. To quit simply type "exit" and hitting Enter or just type CTRL+C.
+After you run "mongo" you will be in the so called <b>Mongo Shell</b>. 
+
+Here you can execute commands directly against your database. 
+
+To quit the Mongo Shell simply type "exit" and hit Enter. 
+
+Or just type CTRL+C like you do for any other terminal program.
 
 
 ##### Troubleshooting
