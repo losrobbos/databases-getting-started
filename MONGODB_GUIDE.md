@@ -64,7 +64,7 @@ mongodb:
 
 In case you got a version 3.6 or above as your "Candidate 1:" that should be fine with our lectures. You can now do `sudo apt install mongodb`
 
-In case you got a version LESS THAN 3.6 listed here, it is highly recommended installing a MongoDB version from the official repository (see below). This way it will be assured that you can use all the code  we are going to use in the lectures.
+In case you got a version LESS THAN 3.6 listed here, it is highly recommended installing a MongoDB version from the official repository (see below). This way it will be assured that you can use all the code  we are going to show in the lectures.
 
 ##### Install Official MongoDB version
 
